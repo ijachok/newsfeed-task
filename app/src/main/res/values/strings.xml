@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">News Feed</string>
+
+    <!-- Fragments titles -->
+    <string name="title_news">All News</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_details">Details</string>
+
+    <string name="search">Search</string>
+    <string name="retry">Retry</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="no_news_found">No news found</string>
+    <string name="no_network_connection">No network connection</string>
+    <string name="execution_failure">"Execution failed. Error: %s"</string>
+    <string name="article_saved">Article saved successfully.</string>
+    <string name="article_already_saved">Article already saved.</string>
+    <string name="article_deleted">Article deleted successfully.</string>
+
+    <string name="undo">Undo</string>
+    \
+    <string name="error_not_loaded">Results could not be loaded</string>
+    <string name="msg_error_fetching_news"><![CDATA[Error fetching news ->]]></string>
+    <string name="msg_error_load_news">Cannot load news, error: %1s</string>
+</resources>
