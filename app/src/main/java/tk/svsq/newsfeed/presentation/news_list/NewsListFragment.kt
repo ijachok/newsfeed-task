@@ -84,9 +84,21 @@ class NewsListFragment : Fragment(R.layout.fragment_news) {
 
                     override fun onQueryTextChange(newText: String?): Boolean = false
                 })
+
+
             }
 
             override fun onMenuItemSelected(menuItem: MenuItem): Boolean {
+                when (menuItem.itemId) {
+                    R.id.menuSortAll -> { viewModel.getArticles(query = KEYWORD_ANDROID) }
+                    R.id.menuSortBusiness -> { searchForArticles("business") }
+                    R.id.menuSortEntertainment -> { searchForArticles("entertainment") }
+                    R.id.menuSortGeneral -> { searchForArticles("general") }
+                    R.id.menuSortHealth -> { searchForArticles("health") }
+                    R.id.menuSortScience -> { searchForArticles("science") }
+                    R.id.menuSortSports -> { searchForArticles("sports") }
+                    R.id.menuSortTechnology -> { searchForArticles("technology") }
+                }
                 return true
             }
         }, viewLifecycleOwner, Lifecycle.State.RESUMED)
@@ -149,12 +161,17 @@ class NewsListFragment : Fragment(R.layout.fragment_news) {
                         retryContent.isGone = true
                         binding.progressBar.isVisible = true
                     }
+
                     is LoadState.NotLoading -> {
                         showContent(newsArticlesAdapter.itemCount > 0)
                     }
+
                     is LoadState.Error -> {
                         val state = loadState.source.refresh as LoadState.Error
-                        showContent(false, getString(R.string.msg_error_load_news, state.error.message.orEmpty()))
+                        showContent(
+                            false,
+                            getString(R.string.msg_error_load_news, state.error.message.orEmpty())
+                        )
                     }
                 }
                 buttonRetry.setOnClickListener {

@@ -3,9 +3,45 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_filter_news"
+        android:icon="@drawable/ic_filter"
+        android:title="@string/filter"
+        app:showAsAction="ifRoom|collapseActionView" >
+
+        <menu>
+            <item
+                android:id="@+id/menuSortAll"
+                android:title="@string/all" />
+            <item
+                android:id="@+id/menuSortBusiness"
+                android:title="@string/business" />
+            <item
+                android:id="@+id/menuSortEntertainment"
+                android:title="@string/entertainment" />
+            <item
+                android:id="@+id/menuSortGeneral"
+                android:title="@string/general" />
+            <item
+                android:id="@+id/menuSortHealth"
+                android:title="@string/health" />
+            <item
+                android:id="@+id/menuSortScience"
+                android:title="@string/science" />
+            <item
+                android:id="@+id/menuSortSports"
+                android:title="@string/sports" />
+            <item
+                android:id="@+id/menuSortTechnology"
+                android:title="@string/technology" />
+        </menu>
+    </item>
+
+    <item
         android:id="@+id/action_search_news"
         android:icon="@drawable/ic_search"
         android:title="@string/search"
         app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="ifRoom|collapseActionView" />
+
+
 </menu>

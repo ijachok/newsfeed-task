@@ -7,6 +7,7 @@
     <string name="title_details">Details</string>
 
     <string name="search">Search</string>
+    <string name="filter">Filter</string>
     <string name="retry">Retry</string>
     <string name="error_occurred">An error occurred</string>
     <string name="no_news_found">No news found</string>
@@ -22,4 +23,12 @@
     <string name="error_not_loaded">Results could not be loaded</string>
     <string name="msg_error_fetching_news"><![CDATA[Error fetching news ->]]></string>
     <string name="msg_error_load_news">Cannot load news, error: %1s</string>
+    <string name="business">Business</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="general">General</string>
+    <string name="health">Health</string>
+    <string name="science">Science</string>
+    <string name="sports">Sports</string>
+    <string name="technology">Technology</string>
+    <string name="all">All</string>
 </resources>
