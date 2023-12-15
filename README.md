@@ -15,9 +15,11 @@ Features:
 - Swipe to delete from favorites with undo functionality
 
 *TODO*:
-- feat: add empty state for favorites
-- fix RETRY button to reload news when connection is available 
 - feat: add filter news by category
+
+*DONE*
+- fix RETRY button to reload news when connection is available
+- feat: add empty state for favorites
 
 # To Get Api Key
 Go to https://newsapi.org/account

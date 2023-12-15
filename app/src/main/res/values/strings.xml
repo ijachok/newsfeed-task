@@ -10,6 +10,7 @@
     <string name="retry">Retry</string>
     <string name="error_occurred">An error occurred</string>
     <string name="no_news_found">No news found</string>
+    <string name="no_favourites_found">You haven`t add any news here yet</string>
     <string name="no_network_connection">No network connection</string>
     <string name="execution_failure">"Execution failed. Error: %s"</string>
     <string name="article_saved">Article saved successfully.</string>
