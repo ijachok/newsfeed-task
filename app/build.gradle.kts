@@ -12,7 +12,7 @@ android {
     namespace = "tk.svsq.newsfeed"
     compileSdk = 34
 
-    val apiKey: String = gradleLocalProperties(rootDir).getProperty("NEWS_API_KEY", "\"API_KEY_MISSING\"")
+    val apiKey: String = gradleLocalProperties(rootDir).getProperty("GET_API_KEY", "\"API_KEY_MISSING\"")
 
     defaultConfig {
         applicationId = "tk.svsq.newsfeed"

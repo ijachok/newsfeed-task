@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.core.os.bundleOf
 import androidx.core.view.MenuHost
@@ -132,7 +133,7 @@ class NewsListFragment : Fragment(R.layout.fragment_news) {
         newsArticlesAdapter.addLoadStateListener { loadState ->
             if (!requireContext().isNetworkAvailable() && newsArticlesAdapter.itemCount < 1) {
                 showContent(message = getString(R.string.no_network_connection))
-                return@addLoadStateListener
+                //return@addLoadStateListener
             }
 
             with(binding) {
